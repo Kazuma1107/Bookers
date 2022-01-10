@@ -1,14 +1,14 @@
 
-<div class="edit-title">
-<p><strong>Title:</storong></p>
+<p>
+    <storong>Title:</storong> <%= @book.title %>
+    </p>
 
-<p><%= @book.title %></p>
-</div>
 
-<div calss="edit-body">
-<p>Body:</p>
-<p><%= @book.body %></p>
-</div>
+
+<p>
+    <storong>Body:</strong> <%= @book.body %>
+    
+</p>
 <%= link_to "Edit", edit_book_path(@book.id) %>
 |
 <%= link_to "Back", books_path(@book.id)  %>
