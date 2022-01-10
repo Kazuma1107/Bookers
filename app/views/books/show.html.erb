@@ -1,8 +1,14 @@
-<h2>タイトル</h2>
+
+<div class="edit-title">
+<p><strong>Title:</storong></p>
+
 <p><%= @book.title %></p>
+</div>
 
-<h2>本文</h2>
+<div calss="edit-body">
+<p>Body:</p>
 <p><%= @book.body %></p>
-<%= link_to "編集", edit_book_path(@book.id) %>
-
-<%= link_to "削除", destroy_book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+</div>
+<%= link_to "Edit", edit_book_path(@book.id) %>
+|
+<%= link_to "Back", books_path(@book.id)  %>
